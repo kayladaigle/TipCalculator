@@ -102,16 +102,16 @@ input:focus {
 .tipButtons {
   display: flex;
   flex-wrap: wrap;
-  gap:.6rem;
+  gap:.8rem;
 }
 
 .tipOption {
-  flex-basis: 33%;
+  flex-basis: 29%;
   background-color: hsl(183, 100%, 15%);
   color: hsl(189, 41%, 97%);
   border-radius: 5px;
   border: none;
-  padding: 10px;
+  padding: 12px;
   font-size: 1.2rem;
 }
 

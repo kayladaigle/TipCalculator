@@ -1,0 +1,202 @@
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-family:'Space Mono', monospace;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+input {
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+}
+
+input[type="number"] {
+  font-size: 1.4rem;
+  direction: rtl;
+  text-align: right;
+  color: hsl(183, 100%, 15%);
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  caret-color: hsl(189, 41%, 97%);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+  outline:none;
+}
+
+.inputField {
+  background-color: hsl(189, 41%, 97%);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding:10px;
+  display: flex;
+  justify-content: space-between;
+  height:1.6rem;
+}
+
+.inputField:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+.main {
+  display: flex;
+  justify-content: center
+}
+
+.parentContainer {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  gap:1rem;
+  width: 800px;
+  height: 450px;
+  padding: 20px;
+}
+
+.leftColumn {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
+  justify-content: space-around;
+  padding:10px;
+}
+
+.leftColumn h2 {
+  color: hsl(186, 14%, 43%);
+  font-size: 1rem;
+}
+
+.rightColumn {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  padding:10px;
+
+}
+
+.rightColumn h2 {
+  color: hsl(189, 41%, 97%);
+  font-size: 1rem;
+}
+.rightColumn h4 {
+  color: hsl(184, 14%, 56%);
+  font-size: .8rem;
+}
+
+.tipButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap:.8rem;
+}
+
+.tipOption {
+  flex-basis: 30%;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+  border-radius: 5px;
+  border: none;
+  padding: 12px;
+  font-size: 1.2rem;
+}
+
+.tipOption:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.tipOption.selected {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.tipAmount {
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tipTotal {
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.resetButton {
+  flex:2;
+  margin:auto;
+}
+
+.reset {
+  background-color: hsl(186, 14%, 43%);
+  color: hsl(183, 100%, 15%);
+  padding: 5px 120px;
+  border-radius: 5px;
+  border:none;
+  font-size: 1.8rem;
+  margin-top:3rem;
+}
+
+.reset:hover {
+  background-color: hsl(172, 67%, 45%) ;
+  color:hsl(183, 100%, 15%);
+}
+
+.attribution {
+  text-align: center;
+  font-size: .6rem;
+}
+
+.calculatedTotalAmount{
+  color: hsl(172, 67%, 45%);
+  font-size: 1.8rem;
+  padding-right: .8rem;
+}
+
+.calculatedTipAmount{
+  color: hsl(172, 67%, 45%);
+  font-size: 1.8rem;
+  padding-right: .8rem;
+}
+
+
+/*Mobile Design */
+@media (max-width: 600px){
+  .parentContainer {
+    width: 350px;
+    height: 900px;
+    margin-top:20px;
+    flex-direction: column;
+  }
+/*  .attribution {
+    margin-top:300px;
+  }
+}
+
+
+/* Colors
+
+- Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Very light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%)
+- Strong cyan: hsl(172, 67%, 45%)

@@ -185,6 +185,9 @@ input:focus {
     margin-top:20px;
     flex-direction: column;
   }
+  .input[type="number"]{
+    font-size:1.2rem;
+  }
 
 }
 
